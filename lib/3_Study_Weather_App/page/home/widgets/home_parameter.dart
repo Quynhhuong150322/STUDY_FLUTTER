@@ -16,13 +16,10 @@ class HomeParameter extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.only(top: 41),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           ParameterMethod(iconPercentage, ScreenW,
               'assets/images/icons/Vector.png', '5km/h'),
-          const SizedBox(
-            width: 153,
-          ),
           ParameterMethod(iconPercentage, ScreenW,
               'assets/images/icons/iconHumidity.png', '30%'),
         ],
