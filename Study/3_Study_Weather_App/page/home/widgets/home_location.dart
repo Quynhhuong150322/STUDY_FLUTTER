@@ -1,11 +1,12 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
 import 'home_localtion_icon.dart';
 
 class HomeLocaltion extends StatelessWidget {
-  const HomeLocaltion({super.key});
+  const HomeLocaltion({super.key, required this.nameLocation});
+
+  final String nameLocation;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,7 @@ class HomeLocaltion extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const HomeLocaltionIcon(),
-            textMethod('HO CHI MINH City'),
+            textMethod(nameLocation.toUpperCase()),
           ],
         ),
         const SizedBox(

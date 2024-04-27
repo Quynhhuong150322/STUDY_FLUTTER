@@ -1,8 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class HomeParameter extends StatelessWidget {
-  const HomeParameter({super.key});
+  const HomeParameter({super.key, required this.speed, required this.humidity});
+
+  final num speed;
+  final num humidity;
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +21,9 @@ class HomeParameter extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
           ParameterMethod(iconPercentage, ScreenW,
-              'assets/images/icons/Vector.png', '5km/h'),
+              'assets/images/icons/Vector.png', '${speed}km/h'),
           ParameterMethod(iconPercentage, ScreenW,
-              'assets/images/icons/iconHumidity.png', '30%'),
+              'assets/images/icons/iconHumidity.png', '$humidity%'),
         ],
       ),
     );

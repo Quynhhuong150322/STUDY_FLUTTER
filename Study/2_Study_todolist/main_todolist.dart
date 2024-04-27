@@ -1,7 +1,5 @@
 // B1: Khai bao imporvien
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'modal/items.dart';
 
 import 'study_widget/ModalBotton.dart';

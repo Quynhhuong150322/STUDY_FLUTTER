@@ -32,7 +32,7 @@ END
 
 2 TEXTINCLUDE
 BEGIN
-    "#include ""winres.h""\r\n"
+    "#include \"winres.h\"\r\n"
     "\0"
 END
 
@@ -73,8 +73,8 @@ IDI_APP_ICON            ICON                    "resources\\app_icon.ico"
 #endif
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION VERSION_AS_NUMBER
- PRODUCTVERSION VERSION_AS_NUMBER
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
  FILEFLAGSMASK VS_FFI_FILEFLAGSMASK
 #ifdef _DEBUG
  FILEFLAGS VS_FF_DEBUG
@@ -89,13 +89,13 @@ BEGIN
     BEGIN
         BLOCK "040904e4"
         BEGIN
-            VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "test_drive" "\0"
+            VALUE "CompanyName", "com.example\0"
+            VALUE "FileDescription", "test_drive\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "test_drive" "\0"
-            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "test_drive.exe" "\0"
-            VALUE "ProductName", "test_drive" "\0"
+            VALUE "InternalName", "test_drive\0"
+            VALUE "LegalCopyright", "Copyright (C) 2024 com.example. All rights reserved.\0"
+            VALUE "OriginalFilename", "test_drive.exe\0"
+            VALUE "ProductName", "test_drive\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

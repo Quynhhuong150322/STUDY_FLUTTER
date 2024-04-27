@@ -96,7 +96,7 @@ void main(List<String> args) {
   print(all);
 
   //--------------------------------------
-  var varAll; // var chap nhan moi kieu => neu k khoi tao gia tri ban dau. Nguoc lai, Neu khoi tao gia tri ban dau => bien la kieu du lieu do k thay doi kieu khac
+  Object varAll; // var chap nhan moi kieu => neu k khoi tao gia tri ban dau. Nguoc lai, Neu khoi tao gia tri ban dau => bien la kieu du lieu do k thay doi kieu khac
   varAll = 'Nguyen Thi Quynh Huong';
   varAll = 21;
 
